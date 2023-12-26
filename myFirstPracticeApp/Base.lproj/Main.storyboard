@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myFirstPracticeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ 명언 생성기 ]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I81-Jy-iEw">
+                                <rect key="frame" x="24" y="109" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f40-X3-ggP">
+                                <rect key="frame" x="24" y="153" width="345" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vry-Zu-WB7">
+                                        <rect key="frame" x="0.0" y="190" width="345" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4js-FS-jBZ">
+                                        <rect key="frame" x="8" y="10" width="329" height="170"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="4js-FS-jBZ" firstAttribute="leading" secondItem="f40-X3-ggP" secondAttribute="leading" constant="8" id="P9w-td-ro8"/>
+                                    <constraint firstItem="Vry-Zu-WB7" firstAttribute="leading" secondItem="f40-X3-ggP" secondAttribute="leading" id="QqL-8a-Dz7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vry-Zu-WB7" secondAttribute="trailing" id="Sm4-eK-9Md"/>
+                                    <constraint firstItem="Vry-Zu-WB7" firstAttribute="top" secondItem="4js-FS-jBZ" secondAttribute="bottom" constant="10" id="YLQ-pe-P8b"/>
+                                    <constraint firstAttribute="trailing" secondItem="4js-FS-jBZ" secondAttribute="trailing" constant="8" id="ZLX-3i-XPU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vry-Zu-WB7" secondAttribute="bottom" constant="10" id="fbK-rd-ijn"/>
+                                    <constraint firstItem="4js-FS-jBZ" firstAttribute="top" secondItem="f40-X3-ggP" secondAttribute="top" constant="10" id="jz6-Xa-W7i"/>
+                                    <constraint firstAttribute="height" constant="200" id="ziW-5k-8yP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLi-iZ-KUN">
+                                <rect key="frame" x="24" y="389" width="345" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="명언 생성"/>
+                                <connections>
+                                    <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Khx-3a-EA9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I81-Jy-iEw" secondAttribute="trailing" constant="24" id="8Ji-Ux-inT"/>
+                            <constraint firstItem="I81-Jy-iEw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="G8K-VW-edD"/>
+                            <constraint firstItem="f40-X3-ggP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Gg7-1W-HUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f40-X3-ggP" secondAttribute="trailing" constant="24" id="Jx6-k0-xmY"/>
+                            <constraint firstItem="uLi-iZ-KUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="PUw-0X-uLf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uLi-iZ-KUN" secondAttribute="trailing" constant="24" id="aog-1t-z42"/>
+                            <constraint firstItem="uLi-iZ-KUN" firstAttribute="top" secondItem="f40-X3-ggP" secondAttribute="bottom" constant="36" id="l06-aR-fud"/>
+                            <constraint firstItem="I81-Jy-iEw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="l9b-7x-lB9"/>
+                            <constraint firstItem="f40-X3-ggP" firstAttribute="top" secondItem="I81-Jy-iEw" secondAttribute="bottom" constant="20" id="vUo-3n-LxR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="4js-FS-jBZ" id="dTo-eS-r3T"/>
+                        <outlet property="nameLabel" destination="Vry-Zu-WB7" id="cul-31-QhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12.977099236641221" y="-13.380281690140846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
